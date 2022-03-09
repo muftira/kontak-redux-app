@@ -53,7 +53,7 @@ function AddKontak() {
 
   return (
     <div className="flex flex-col justify-center items-center h-48 w-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl shadow-2xl drop-shadow-white shadow-slate-700">
-      <h4 className="mb-2 font-bold">{id ? "Edit Kontak" : "Add Kontak"}</h4>
+      <h4 className="mb-2 font-bold">{id ? "Edit Contact" : "Add Contact"}</h4>
       <form onSubmit={(e) => handleSubmit(e)}
         className='flex flex-col justify-center'
         >

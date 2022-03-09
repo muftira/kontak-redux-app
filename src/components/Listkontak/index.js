@@ -37,7 +37,7 @@ function ListKontak() {
                 <button onClick={() => dispatch(deleteKontak(kontak.id))}
                 className='mx-2 text-purple-500 font-bold'
                 >
-                  Hapus
+                  Delete
                 </button>{' '}
                 <button onClick={() => dispatch(detailKontak(kontak))}
                 className='text-purple-500 font-bold'
