@@ -52,7 +52,7 @@ function AddKontak() {
   }, [detailKontakResult]);
 
   return (
-    <div className="flex flex-col justify-center items-center h-48 w-80 bg-amber-500 rounded-3xl shadow-2xl">
+    <div className="flex flex-col justify-center items-center h-48 w-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl shadow-2xl drop-shadow-white shadow-slate-700">
       <h4 className="mb-2 font-bold">{id ? "Edit Kontak" : "Add Kontak"}</h4>
       <form onSubmit={(e) => handleSubmit(e)}
         className='flex flex-col justify-center'
@@ -62,17 +62,17 @@ function AddKontak() {
           placeholder="Name . . ."
           value={nama}
           onChange={(e) => setNama(e.target.value)}
-          className='border border-slate-400 rounded-md px-1 py-1 text-sm w-60 h-8'
+          className=' bg-neutral-700 rounded-md px-1 py-1 text-sm w-60 h-8 text-white'
         />
         <input
-          type="text"
+          type="number"
           placeholder="Phone Number . . ."
           value={nohp}
           onChange={(e) => setNohp(e.target.value)}
-          className='border border-slate-400 rounded-md px-1 py-1 mt-2 text-sm w-60 h-8'
+          className='bg-neutral-700 rounded-md px-1 py-1 mt-2 text-sm w-60 h-8 text-white'
         />
         <div className="flex justify-center mt-4">
-            <button className="h-8 w-20 bg-red-700 rounded-md shadow-lg">Submit</button>
+            <button className="h-8 w-20 rounded-md shadow-lg border-2 border-neutral-700">Submit</button>
         </div>
       </form>
     </div>

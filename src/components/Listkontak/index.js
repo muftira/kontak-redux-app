@@ -24,23 +24,23 @@ function ListKontak() {
 
   return (
     <div className="">
-      <h4 className="font-bold h-8 w-80 bg-[#2016F5] flex flex-col justify-center items-center rounded-md mt-4 shadow-xl">List Kontak</h4>
+      <h4 className="font-bold h-8 w-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex flex-col justify-center items-center rounded-md mt-4 shadow-xl shadow-white shadow-slate-800">List Kontak</h4>
       
 
         {getListKontakResult ? (
           getListKontakResult.map((kontak) => {
             return (
               <p key={kontak.id}
-              className='h-8 w-80 bg-white rounded-md shadow-xl my-2 flex justify-center items-center'
+              className='h-8 w-80 shadow-white shadow-slate-900 text-white bg-neutral-700 rounded-md shadow-xl my-2 flex justify-center items-center '
               >
                 {kontak.nama} - {kontak.nohp} -{" "}
                 <button onClick={() => dispatch(deleteKontak(kontak.id))}
-                className='mx-2 text-red-700 font-bold'
+                className='mx-2 text-purple-500 font-bold'
                 >
                   Hapus
                 </button>{' '}
                 <button onClick={() => dispatch(detailKontak(kontak))}
-                className='text-red-700 font-bold'
+                className='text-purple-500 font-bold'
                 >Edit</button>
               </p>
             );

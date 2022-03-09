@@ -24,7 +24,7 @@ export const getListKontak = () => {
         //get API
         axios({
             method: 'GET',
-            url: 'http://localhost:3000/kontak',
+            url: 'https://kontak-backend.herokuapp.com/kontak',
             timeout: 120000
         })
         .then((response) => {
@@ -69,7 +69,7 @@ export const addKontak = (data) => {
         //get API
         axios({
             method: 'POST',
-            url: 'http://localhost:3000/kontak',
+            url: 'https://kontak-backend.herokuapp.com/kontak',
             timeout: 120000,
             data: data
         })
@@ -114,7 +114,7 @@ export const deleteKontak = (id) => {
         //get API
         axios({
             method: 'DELETE',
-            url: 'http://localhost:3000/kontak/'+id,
+            url: 'https://kontak-backend.herokuapp.com/kontak/'+id,
             timeout: 120000
             
         })
@@ -171,7 +171,7 @@ export const updateKontak = (data) => {
         //get API
         axios({
             method: 'PUT',
-            url: 'http://localhost:3000/kontak/'+data.id,
+            url: 'https://kontak-backend.herokuapp.com/kontak/'+data.id,
             timeout: 120000,
             data: data
         })
